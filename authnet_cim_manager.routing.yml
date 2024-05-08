@@ -1,0 +1,17 @@
+authnet_cim_manager.settings:
+  path: '/admin/config/system/authcim'
+  defaults:
+    _title: 'Authorise.Net Settings'
+    _form: 'Drupal\authnet_cim_manager\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+authnet_cim_manager.cim_creation_fom:
+  path: '/authnet-cim-manager/cim-creation-fom'
+  defaults:
+    _title: 'Cim Creation Fom'
+    _form: 'Drupal\authnet_cim_manager\Form\CimCreationFom'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: true

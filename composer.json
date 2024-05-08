@@ -1,0 +1,15 @@
+{
+    "name": "drupal/authnet_cim_manager",
+    "description": "\"The AuthNet CIM Manager module facilitates smooth integration with the Authorize.Net Customer Information Manager (CIM) for Drupal websites.\"",
+    "type": "drupal-module",
+    "require": {
+        "authorizenet/authorizenet": "^2.0"
+    },
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Prashant Singh",
+            "email": "prashantj4505@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+#authnet-cim-manager-cim-creation-fom{
+  max-width: 992px;
+  margin: auto;
+}
+#authnet-cim-manager-cim-creation-fom .flex-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 20px;
+}
+#authnet-cim-manager-cim-creation-fom h3.form-cim-creation{
+  text-align: center;
+}
+#authnet-cim-manager-cim-creation-fom input{
+  margin-right: 1rem;
+}
+#authnet-cim-manager-cim-creation-fom select{
+  width: 100%;
+}
+.field-card-container  {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* Adjust the minimum and maximum width as needed */
+  gap: 20px; /* Adjust the gap between columns */
+}
+.field-auth-flex  {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Adjust the minimum and maximum width as needed */
+  gap: 20px; /* Adjust the gap between columns */
+}
+
+/* Media fro table */
+@media (max-width: 768px) {
+  .field-card-container  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Adjust the minimum and maximum width as needed */
+    gap: 20px; /* Adjust the gap between columns */
+  }
+}

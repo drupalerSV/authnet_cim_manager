@@ -1,0 +1,55 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function authnet_cim_manager_help($route_name, RouteMatchInterface $route_match) {
+  $output = '';
+  switch ($route_name) {
+    case 'help.page.authnet_cim_manager':
+      $output = '<h3>' . t('About AuthNet CIM Manager') . '</h3>';
+      $output .= '<p>' . t('The AuthNet CIM Manager module facilitates smooth integration with the Authorize.Net Customer Information Manager (CIM) for Drupal websites.') . '</p>';
+      $output .= '<h4>' . t('Introduction') . '</h4>';
+      $output .= '<p>' . t('The AuthNet CIM Manager module streamlines the management of customer information through the Authorize.Net payment gateway. Its features include:') . '</p>';
+      $output .= '<ul>';
+      $output .= '<li>' . t('Capture and update customer information during payment transactions.') . '</li>';
+      $output .= '<li>' . t('Enhanced security and efficiency for payment processing.') . '</li>';
+      $output .= '</ul>';
+      $output .= '<h4>' . t('Requirements') . '</h4>';
+      $output .= '<p>' . t('This module requires the following dependencies:') . '</p>';
+      $output .= '<ul>';
+      $output .= '<li>' . t('Authorize.Net PHP SDK (automatically installed via Composer)') . '</li>';
+      $output .= '</ul>';
+      $output .= '<h4>' . t('Installation') . '</h4>';
+      $output .= '<ol>';
+      $output .= '<li>' . t('Download the module and place it in your Drupal installation\'s <code>modules</code> directory.') . '</li>';
+      $output .= '<li>' . t('Enable the module through the Drupal administration interface or by running <code>drush en authnet_cim_manager</code> from the command line.') . '</li>';
+      $output .= '</ol>';
+      $output .= '<p>' . t('For more detailed installation instructions, refer to <a href="@url">Drupal.org documentation</a>.', ['@url' => 'https://www.drupal.org/node/895232']) . '</p>';
+      $output .= '<h4>' . t('Configuration') . '</h4>';
+      $output .= '<ol>';
+      $output .= '<li>' . t('Navigate to the module\'s configuration page.') . '</li>';
+      $output .= '<li>' . t('Configure settings for customer information capture and updating.') . '</li>';
+      $output .= '<li>' . t('Customize additional options as needed.') . '</li>';
+      $output .= '</ol>';
+      $output .= '</ul>';
+      break;
+  }
+  return $output;
+}
+
+/**
+ * Retrieves a form by its name using Drupal's Form Builder service.
+ *
+ * @param string $form_name
+ *   The name of the form to retrieve.
+ *
+ * @return array
+ *   An array representing the form.
+ */
+function authnet_cim_manager_get_form(string $form_name): array {
+  // Retrieve the form using Drupal's Form Builder service.
+  return Drupal::formBuilder()->getForm($form_name);
+}

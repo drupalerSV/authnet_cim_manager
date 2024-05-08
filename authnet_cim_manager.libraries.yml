@@ -1,0 +1,10 @@
+authorize_net_css:
+  version: 1.x
+  css:
+    theme:
+      assets/css/authnet.css: {}
+
+authorize_net_js:
+  version: 1.x
+  js:
+    assets/js/authnet.js: {}

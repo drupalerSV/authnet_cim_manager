@@ -1,0 +1,6 @@
+name: 'Authorise.Net CIM Manager'
+type: module
+description: 'Utilize Authorize.Net CIM Manager to effortlessly create and update Customer Information Profiles, ensuring smooth transactions'
+package: Other
+core_version_requirement: ^9 || ^10
+configure: authnet_cim_manager.settings
